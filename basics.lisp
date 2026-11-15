@@ -5,3 +5,9 @@
   (if (= (mod n 2) 0)
       (format t "~a is even~%" n)
       (format t "~a is odd~%" n)))
+
+;; A function that returns the factorial of a given number
+(defun factorial (n)
+  (if (= n 0)
+      1
+      (* n (fatorial (- n 1)))))
